@@ -9,6 +9,11 @@
         a {
             font-size: 20px;
             background-color: rgb(141, 255, 145);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(255, 255, 255);
         }
 
         table, td, tr, th {
@@ -21,55 +26,103 @@
         .link {
             background-color: rgb(118, 0, 0);
         }
+
+        .days {
+            background-color: rgb(255, 255, 136);
+            color: rgb(0, 0, 93);
+        }
+
+        .rotate {
+            width: 100;
+            height: 20px;
+            transform: rotate(35deg); 
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: 0.7s ease;
+
+        }
+
+        @media screen and (max-width: 450px) {
+            .container {
+                justify-content: center;
+                width: 80vw;
+                height: 37vh;
+                justify-content: center;
+                transform: rotate(90deg);
+            }
+            
+        }
     </style>
     <title>TASKS</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th colspan="6" style="text-align:center ; background-color: rgb(0, 0, 109); color: aliceblue;">TASKS</th>
-        </tr>
-        <tr>
-            <td class="link"><a href="Sunday_16_10/task1.html">task1</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031185975482798150/Task1.PNG" alt="Task1" width="100px" height="100px"></td>
-            
-            <td class="link"><a href="Sunday_16_10/task2.html">task2</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031190554106662962/task2.PNG" alt="Task2" width="100px" height="100px"></td>
-      
-            
-            <td class="link"><a href="Sunday_16_10/task3.html">task3</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031196850197381120/task3.PNG" alt="Task3" width="100px" height="100px"></td>
-        </tr>
-        <tr>
-            <td class="link"><a href="Sunday_16_10/task4.html">task4</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031200999727173692/task4.PNG?width=979&height=588" alt="Task4" width="100px" height="100px"></td>
-     
-            <td class="link"><a href="Monday_17_10/task5.html">task5</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031538630814072873/task1.2.PNG" alt="Task5" width="100px" height="100px"></td>
-     
-            <td class="link"><a href="Monday_17_10/task6.html">task6</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031542209197121577/task2.2.PNG?width=605&height=588" alt="Task6" width="100px" height="100px"></td>
-        </tr>
-        <tr>
-            <td class="link"><a href="Monday_17_10/task7.html">task7</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031552496348442694/task4.2.PNG" alt="Task7" width="100px" height="100px"></td>
-      
-            <td class="link"><a href="Monday_17_10/task8.html">task8</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031556331448053770/cachedImage.png?width=574&height=589" alt="Task8" width="100px" height="100px"></td>
+    <div class="container">
+        <table>
+
+            <tr>
+                <th style="background-color: rgb(100, 0, 0); color:rgb(255, 219, 175)">Days</th>
+                <th colspan="10" style="text-align:center ; background-color: rgb(0, 0, 109); color: aliceblue;">TASKS</th>
+            </tr>
+
+            <tr>
+                <td class="days">Sunday</td>
+                <td class="link"><a href="Sunday_16_10/task1.html">task1</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031185975482798150/Task1.PNG" alt="Task1" width="100px" height="100px"></td>
+                
+                <td class="link"><a href="Sunday_16_10/task2.html">task2</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031190554106662962/task2.PNG" alt="Task2" width="100px" height="100px"></td>
         
-            <td class="link"><a href="Monday_17_10/task9.html">task9</a></td>
-            <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031583691509612544/row_col.PNG" alt="Task9" width="100px" height="100px"></td>
-        </tr>
-    </table>
+                
+                <td class="link"><a href="Sunday_16_10/task3.html">task3</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031196850197381120/task3.PNG" alt="Task3" width="100px" height="100px"></td>
+                
+                <td class="link"><a href="Sunday_16_10/task4.html">task4</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031200999727173692/task4.PNG?width=979&height=588" alt="Task4" width="100px" height="100px"></td>
+                
+                <td colspan="2" style="background-color: rgb(100, 0, 0) ; font-size: 12px; color: yellow; text-align: center;"><div class="rotate">Just That for This Day</div></td>
+            </tr>
+
+            <tr>
+                <td class="days">Monday</td>
+                
+                <td class="link"><a href="Monday_17_10/task5.html">task5</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031538630814072873/task1.2.PNG" alt="Task5" width="100px" height="100px"></td>
+        
+                <td class="link"><a href="Monday_17_10/task6.html">task6</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031542209197121577/task2.2.PNG?width=605&height=588" alt="Task6" width="100px" height="100px"></td>
+            
+                <td class="link"><a href="Monday_17_10/task7.html">task7</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031552496348442694/task4.2.PNG" alt="Task7" width="100px" height="100px"></td>
+        
+                <td class="link"><a href="Monday_17_10/task8.html">task8</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031556331448053770/cachedImage.png?width=574&height=589" alt="Task8" width="100px" height="100px"></td>
+            
+                <td class="link"><a href="Monday_17_10/task9.html">task9</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031583691509612544/row_col.PNG" alt="Task9" width="100px" height="100px"></td>
+            </tr>
+
+            <tr>
+                <td class="days">Tuseday</td>
+
+                <td class="link"><a href="Tuseday_18_10/task10.html">task10</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031888106036670485/task3.PNG" alt="Task10" width="100px" height="100px"></td>
+        
+                <td class="link"><a href="Tuseday_18_10/task11.html">task11</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031893166334427177/task1.PNG" alt="Task11" width="100px" height="100px"></td>
+            
+                <td class="link"><a href="Tuseday_18_10/task12.html">task12</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031903153395875840/task6.PNG" alt="Task12" width="100px" height="100px"></td>
+        
+                <td class="link"><a href="Tuseday_18_10/task13.html">task13</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031907800139448380/task_description.PNG?width=1124&height=663" alt="Task13" width="100px" height="100px"></td>
+            
+                <td class="link"><a href="Tuseday_18_10/task14.html">task14</a></td>
+                <td><img src="https://media.discordapp.net/attachments/1028590342070607903/1031918934498218095/task5.PNG" alt="Task14" width="100px" height="100px"></td>
+
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
-
-
-<!-- <a href="Sunday_16_10/task1.html">task1</a>
-<a href="Sunday_16_10/task2.html">task2</a>
-<a href="Sunday_16_10/task3.html">task3</a>
-<a href="Sunday_16_10/task4.html">task4</a>
-<a href="Monday_17_10/task5.html">task5</a>
-<a href="Monday_17_10/task6.html">task6</a>
-<a href="Monday_17_10/task7.html">task7</a>
-<a href="Monday_17_10/task8.html">task8</a> -->
