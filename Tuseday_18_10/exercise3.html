@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label, input, p, select, option, button {
+            margin: 10px;
+        }
+    </style>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Employee Interests Survey Form</h1>
+    <form>
+        <label>Enter your name :</label>
+        <input type="text"><br>
+
+        <label>Enter your department :</label>
+        <input type="text"><br>
+
+        <label >Tell us a Littel about your self :</label>
+        <textarea cols="35" rows="7"></textarea><br>
+
+        <label>Did you exercise at home : </label>
+        <input type="radio" name="yes-no"> Yes
+        <input type="radio" name="yes-no"> No
+        <br>
+
+        <p>How do you like to read about your favorite topics ?</p>
+        <input type="checkbox" name="read"> Books
+        <input type="checkbox" name="read"> Online sources
+        <input type="checkbox" name="read"> Phone app
+        <input type="checkbox" name="read"> Magazines
+        <br>
+
+        <label>What genre of movies do you like ?</label>
+        <select>
+            <option>
+                comedy
+            </option>
+        </select>
+        <br>
+
+        <button>Submit form</button>
+    </form>
+</body>
+</html>
