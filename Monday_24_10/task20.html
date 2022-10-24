@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: 700px;
+            border: 10px solid rgb(157, 142, 3);
+            margin: 5px;
+        }
+
+        .item {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #item1 {
+            background-color: red;
+        }
+
+        #item2 {
+            background-color: rgb(115, 255, 0);
+        }
+        #item3 {
+            background-color: rgb(128, 0, 255);
+        }
+        #item4 {
+            background-color: rgb(0, 255, 157);
+        }
+        #item5 {
+            background-color: rgb(90, 2, 2);
+        }
+        #item6 {
+            background-color: rgb(30, 4, 74);
+        }
+        #item7 {
+            background-color: rgb(60, 4, 30);
+        }
+        #item8 {
+            background-color: rgb(255, 230, 0);
+        }
+        #item9 {
+            background-color: rgb(9, 129, 101);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+        <div class="item" id="item6">6</div>
+        <div class="item" id="item7">7</div>
+        <div class="item" id="item8">8</div>
+        <div class="item" id="item9">9</div>
+    </div>
+</body>
+</html>
