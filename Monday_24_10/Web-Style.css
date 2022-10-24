@@ -1,0 +1,167 @@
+body {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+#containr {
+    background-color: rgba(255, 255, 255, 0.945);
+    height: 75px;
+    display: flex; 
+    align-items: center; /* بتخلي كل عنصر بمنتصف النافبار بس رح يكون منتصف عمودي */
+    justify-content: space-between; /* بتخلي كل عنصر جوا الحاوية بعيد عن الثاني او بتحط الفراغ كله بين العنصرين */
+
+}  
+
+#one {
+    position: relative; /* عشان احرك بالنسبة الابناء كمان شوي */
+    display: flex;
+    flex-direction: row;
+}
+
+#mid {
+    position: absolute; /* عشان احركها بالنسبة للاب تبعها اريح ما احركها بالنسبة للبودي */
+    top: 2px;
+    left: 65px;
+    font-size: 30px;
+    font-family: 'Freehand', 'cursive';
+    font-weight: bold;
+    margin: 15px;
+}
+
+#bottom {
+    position: absolute; /* عشان احركها بالنسبة للاب تبعها اريح ما احركها بالنسبة للبودي */
+    bottom: -15px;
+    left: 65px;
+    font-size: 10px;
+    width: 200px;;
+    color: yellowgreen;
+    margin: 15px;
+}
+
+#two { /* عشان اجيب النص من تحت لجنب الصورة */
+    display: flex;
+    flex-direction: row;
+}
+
+
+hr {
+    margin-top: 15px;
+    border: 1px dashed rgb(73, 73, 73);
+    height: 3px;
+}
+
+#cn-logo {
+    width: 75px;
+    height: 75px;
+    background-color: #343434;
+}
+
+#ic {
+    font-size: 35px;
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#cn {
+    width: 25px;
+    height: 25px;
+    background-color: #343434;
+    margin-right: 5px;
+}
+
+.logo-small {
+
+    font-size: 15px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+h1 {
+    font-weight:bolder;
+    font-family: 'Anton', sans-serif;
+}
+
+#icon-parent {
+    position: relative; /* عشان تخلي لعلامة الطباعة مرجعية و تقدر من هاي المرجعية تحدد المكان تبعها */
+}
+
+#print {
+    z-index: 999999; /* لازم تعطيها ارتفاع في المحور (زد) عشان تقدر تحط علامة الطباعة فوق الصورة */
+    color: rgb(172, 154, 0) ;
+    font-size: 20px;
+    position: absolute; /* بدي احدد هون مكان علامة الطباعة و بدي احاول اسنترها زي التاسك */
+    right: 80px;
+    top: -15px;
+    
+}
+
+
+#choco-img img {
+    max-width: 100%; /* عشان التخلي الصوورة جاية بالتمام مع البوودي و الكوتينر تبعها */
+
+}
+
+.paragraph {
+    color:rgb(172, 154, 0);
+    font-size: 20px;
+}
+
+#check-box {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/793/267/non_2x/texture-of-paper-background-of-sheet-of-paper-with-lines-for-writing-vector.jpg);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#bottom-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#name {
+    font-weight: bold;
+}
+
+#share {
+    margin-right: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    width :200px;
+    height: 25px;
+    padding-top: 5px;
+}
+
+#desc {
+    width: 400px;
+}
+
+
+#parent-last-ic {
+    background-color: #666666;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+#last-ic {
+    
+    font-size: 25px;
+    color: white;
+    margin-top: 12.5px;
+}
+
+.last-para {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color:rgb(172, 154, 0);
+}
