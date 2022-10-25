@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task 2</title>
+
+    <style>
+
+        body {
+            background-color: rgb(255, 219, 165);
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+        }
+
+        #grid {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            width: 200px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            font-size: 10px;
+        }
+
+        p {
+            font-size: 5px;
+            color: rgb(160, 159, 159);
+        }
+
+        .img {
+            width: 20px ;
+            height: 20px ;
+        }
+
+        #img-one {
+            
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #img-two {
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #img-three {
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #img-four {
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        hr {
+            position: absolute;
+            right: 0px;
+            width: 198px;
+            font-size: 1px;
+            color: black;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="grid">
+
+            <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #1</h1>
+                <p>Amman, Jordan</p>
+                <hr>
+            </div>
+
+            <img class="img" id="img-two" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #2</h1>
+                <p>Aqaba, Jordan</p>
+                <hr>
+            </div>
+
+            <img class="img" id="img-three" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #3</h1>
+                <p>Zarqa, Jordan</p>
+                <hr>
+            </div>
+
+            <img class="img" id="img-four" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #4</h1>
+                <p>Irbid, Jordan</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

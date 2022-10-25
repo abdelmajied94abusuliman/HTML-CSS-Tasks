@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task 1</title>
+    <style>
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .part {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            align-content: center;
+            width: 50vw;
+            height: 100vh;
+            line-height: 100vh;
+        }
+
+        #orange {
+            background-color: orange;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="part" id="orange">First Part</div>
+        <div class="part" id="blue">Second Part</div>
+    </div>
+</body>
+</html>
