@@ -12,7 +12,22 @@
             background-color: rgb(255, 219, 165);
         }
 
-        #container {
+        #big-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #first-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 200px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        #second-container {
             display: flex;
             justify-content: center;
         }
@@ -69,7 +84,7 @@
             left: 5px;
         }
 
-        hr {
+        #grid hr {
             position: absolute;
             right: 0px;
             width: 198px;
@@ -78,41 +93,107 @@
 
         }
 
+        #first-container hr {
+            position: absolute;
+            right: 20px;
+            width: 198px;
+            font-size: 1px;
+            color: black;
+
+        }
+
+        .text {
+            width: 175px;
+            position: absolute;
+            position: relative;
+            left: 25px;
+
+        }
+
     </style>
 
 </head>
 <body>
-    <div id="container">
-        <div id="grid">
+    <div id="big-container">
 
-            <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+
+        <div id="first-container">
+
             <div>
-                <h1>User #1</h1>
+                <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            </div>
+            <div class="text">
+                <h1>User #111</h1>
                 <p>Amman, Jordan</p>
                 <hr>
             </div>
 
-            <img class="img" id="img-two" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+
             <div>
+                <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            </div>
+            <div class="text">
                 <h1>User #2</h1>
                 <p>Aqaba, Jordan</p>
                 <hr>
             </div>
 
-            <img class="img" id="img-three" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+
             <div>
+                <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            </div>
+            <div class="text">
                 <h1>User #3</h1>
                 <p>Zarqa, Jordan</p>
                 <hr>
             </div>
 
-            <img class="img" id="img-four" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+
             <div>
+                <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            </div>
+            <div class="text">
                 <h1>User #4</h1>
                 <p>Irbid, Jordan</p>
             </div>
 
         </div>
-    </div>
+
+
+
+
+        <div id="second-container">
+            <div id="grid">
+
+                <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+                <div>
+                    <h1>User #1</h1>
+                    <p>Amman, Jordan</p>
+                    <hr>
+                </div>
+
+                <img class="img" id="img-two" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+                <div>
+                    <h1>User #2</h1>
+                    <p>Aqaba, Jordan</p>
+                    <hr>
+                </div>
+
+                <img class="img" id="img-three" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+                <div>
+                    <h1>User #3</h1>
+                    <p>Zarqa, Jordan</p>
+                    <hr>
+                </div>
+
+                <img class="img" id="img-four" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+                <div>
+                    <h1>User #4</h1>
+                    <p>Irbid, Jordan</p>
+                </div>
+
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
