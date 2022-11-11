@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task</title>
+    <style>
+        body {
+            width: 20%;
+            margin-left: 40%;
+            background-color: rgb(70, 70, 255);
+            height: 100%;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            background-color: antiquewhite;
+            width: 100%;
+        }
+        .text{
+            padding-left: 50px;
+            height: 50px;
+            box-sizing: border-box ;
+            padding-top: 15px;
+        }
+        #side {
+            text-align: center;
+            color: rgb(255, 199, 131);
+            font-size: 25px;
+            height: 50px;
+        }
+        
+        #image {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            margin-top: 100px;
+            margin-left: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="side">Side Menu</div>
+        <div class="text" style="background-color: rgb(212, 175, 255);color:rgb(71, 6, 132); ">Home</div>
+        <div class="text">About me</div>
+        <div class="text">Portfolio</div>
+        <div class="text">Contact me</div>
+        <img id="image" src="https://i.pinimg.com/736x/c6/de/4f/c6de4fbc92c32c25dd90c41884968d63--die-minions-minion-s.jpg" alt="">
+    </div>
+</body>
+</html>
